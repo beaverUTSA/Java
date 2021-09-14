@@ -1,0 +1,21 @@
+class Fib {
+	public static void main(String args[]) {
+    	int var = 0;
+        int fib = 1;
+        int out = 1;
+        int oldout;
+        while(var < 31){
+        	if (var == 0)
+            	System.out.println(var);
+            else if (var == 1 || var == 2)
+            	System.out.println(out);
+            else{
+            	oldout = fib;
+            	fib = out;
+            	out = oldout + fib;
+            	System.out.println(out);
+        	}
+            var++;
+        }
+    }
+}
